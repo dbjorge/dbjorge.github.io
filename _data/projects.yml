@@ -1,7 +1,6 @@
-- name: Super awesome project
-  link: github.com/sproogen
-  github: sproogen/resume-theme
+- name: AirPush Detector
+  github: dbjorge/airpush-detector
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-  description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    Detect Android apps responsible for push notification advertising.
+  description: |
+    AirPush detector was a small Android app that helped identify other apps using push notifications for advertisements. Android built this functionality into the OS as of Android 4.1; the app had 6 million total user installs as of its sunset in 2017.

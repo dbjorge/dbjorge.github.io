@@ -1,8 +1,49 @@
-- company: The Boring Company
-  link: boringcompany.com
-  job_title: Senior Network System Administrator
-  dates: November 2017 - Present
+- company: |
+    Microsoft
+    Accessibility Insights
+  link: accessibilityinsights.io
+  job_title: Senior Software Engineer
+  dates: January 2019 - Present
   quote: >
-   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-  description: | # this will include new lines to allow paragraphs
-    Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+    Solve accessibility issues before they reach your customers.
+  description: |
+    * [Accessibility Insights](https://accessibilityinsights.io)
+
+- company: |
+    Microsoft
+    Windows Engineering System
+  link: microsoft.com
+  job_title: Senior Software Engineer
+  dates: September 2016 - December 2018
+  quote: >
+    Empowering every person and every organization on the planet to achieve more.
+  description: |
+    * Saved ~10,000 engineer-hours/year by making it easier to onboard tests to Windows’ test labs
+    * Maintained and scaled out a legacy continuous integration system that reduced build and test times for typical Windows developers’ code changes from 20 hours to 1 hour
+    * Responsible for rapid full-stack development of many internal tools/services (mostly Azure/C#, some TypeScript/React) as part of an XP engineering team, working directly with stakeholders
+
+- company: |
+    Microsoft
+    Windows Networking
+  link: microsoft.com
+  job_title: Software Engineer II
+  dates: September 2013 - September 2016
+  quote: >
+    Empowering every person and every organization on the planet to achieve more.
+  description: |
+    * Owned Windows Update’s underlying data transfer layer (BITS), serving over one billion end users
+    * Responsible for all of Windows’ APIs for performing background data transfer and SOAP operations
+    * Improved team efficiency by introducing several agile techniques, including retrospectives, pair programming, and test-driven design, to a heavily waterfall-focused Windows dev team
+
+- company: |
+    Microsoft
+    Windows Networking
+  link: microsoft.com
+  job_title: Software Development Engineer in Test
+  dates: May 2010 - August 2010 (Intern), May 2011 - August 2013
+  quote: >
+    Empowering every person and every organization on the planet to achieve more.
+  description: |
+    * Designed and built the end-to-end networking stress and reliability test strategy for Windows 8/8.1
+    * Responsible for the Windows Hardware Certification Kit test suite for NetworkDirect capabilities of ethernet devices, driving quality of the entire hardware ecosystem across many companies
+    * Designed and implemented a network protocol fuzz testing framework, and used it to identify several zero-day critical class security bugs in the Windows 8 TCP/IP stack
