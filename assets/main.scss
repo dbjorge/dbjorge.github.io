@@ -1,0 +1,10 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'modern-resume-theme';
+
+// Darken from default to a 4.5:1 contrast ratio
+a {
+    color: #3974C6;
+}
