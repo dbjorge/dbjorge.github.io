@@ -1,6 +1,4 @@
 - name: AirPush Detector
   github: dbjorge/airpush-detector
-  quote: >
-    Detect Android apps responsible for push notification advertising.
   description: |
-    AirPush detector was a small Android app that helped identify other apps using push notifications for advertisements. Android built this functionality into the OS as of Android 4.1; the app had 6 million total user installs as of its sunset in 2017.
+    AirPush Detector was an independently developed Android app that helped identify other apps using push notifications for advertisements. Over its lifetime, the app had 6 million user installs. Android built this functionality into the OS with Android 4.1, and I sunset the app in 2017.
