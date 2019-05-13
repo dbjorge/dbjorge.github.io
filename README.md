@@ -1,4 +1,5 @@
-I am Dan Bjorge, a senior software engineer at [Microsoft](https://github.com/microsoft). I work on [Accessibility Insights](https://accessibilityinsights.io), a collection of free and open source dev tools for testing websites and Windows applications for accessibility issues.
+# dbjorge.github.io
 
-* GitHub: [@dbjorge](https://github.com/dbjorge)
-* LinkedIn: [@dbjorge](https://www.linkedin.com/in/dbjorge/)
+Controls the content of [dbjorge.net](https://www.dbjorge.net).
+
+Based on [sproogen/modern-resume-theme](https://github.com/sproogen/modern-resume-theme).
