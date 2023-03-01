@@ -4,9 +4,17 @@
 
 @import 'modern-resume-theme';
 
-// Darken from default to a 4.5:1 contrast ratio
 a {
+    // Required for 4.5:1 contrast with background
     color: #3974C6;
+    // Required for link-in-text-block
+    text-decoration: underline;
+}
+
+// Improves focus appearance, especially around top-right icon links
+a:focus, a:focus-visible {
+    outline-offset: 0;
+    outline: solid 2px rgb(51, 51, 51);
 }
 
 .inline-github-icon {
