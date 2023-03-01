@@ -9,9 +9,11 @@
       dates: May 2011 - August 2013
   description: |
     ##### Accessibility Insights [<i class="fa fa-github inline-github-icon" title="Accessibility Insights Github link"></i>](https://github.com/microsoft/accessibility-insights-web)
-
-    * Helps 10,000s of developers and 100s of Microsoft teams build more accessible software
-    * Free and open source, building on the open source [axe-core](https://github.com/dequelabs/axe-core) engine
+    
+    * Represented Microsoft as a member of the W3C Accessibility Guidelines Working Group advancing the industry-standard Web Content Accessibility Guidelines (WCAG)
+    * Built and maintained accessibility testing tools, services, libraries, and guidance spanning a wide variety of platforms (Web, Windows, Mac, Linux, Android) and developer ecosystems
+    * Helped ~100,000 users of our open-source tools, including most Microsoft development teams, to make their software more accessible to all
+    * Led technical collaboration between Accessibility Insights and internal/external partner teams
 
     ##### Windows Engineering System
 
