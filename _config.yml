@@ -26,6 +26,7 @@ linkedin_username: dbjorge
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
+about_profile_image_alt: Photograph of Dan's head. Dan is a smiling white male in his 30s with short brown hair wearing glasses and a purple bow tie
 about_content: | # this will include new lines to allow paragraphs
   I am a senior software engineer at [Microsoft](https://github.com/microsoft) working on [Accessibility Insights](https://accessibilityinsights.io).
 
