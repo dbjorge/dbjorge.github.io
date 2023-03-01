@@ -2,6 +2,9 @@
 repository: dbjorge/dbjorge.github.io
 # favicon: images/favicon.ico
 
+# Content configuration version
+version: 2
+
 # Personal info
 name: Dan Bjorge
 title: Senior Software Engineer, Microsoft
@@ -9,13 +12,13 @@ email: dan@dbjorge.net
 website: dbjorge.net
 
 # Social links
-# twitter_username: facespics
 github_username: dbjorge
+linkedin_username: dbjorge
+# twitter_username: facespics
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: chillwildlife
-linkedin_username: dbjorge
 # pinterest_username: jekyll
 # youtube_username: globalmtb
 # googleplus_username: +jekyll
@@ -26,25 +29,52 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   I am a senior software engineer at [Microsoft](https://github.com/microsoft) working on [Accessibility Insights](https://accessibilityinsights.io).
 
-# Projects Section
-# projects_title: Projects
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: 'Microsoft'
+        caption: |
+          <p><b>Senior Software Engineer</b></p>
+          <p>January 2019 - present</p>
+          <p><b>Software Engineer II</b></p>
+          <p>September 2013 - September 2016</p>
+          <p><b>Software Engineer in Test</b></p>
+          <p>May 2011 - August 2013</p>
+        description: |
+          ##### Accessibility Insights [<i class="fa fa-github inline-github-icon" title="Accessibility Insights for Web on Github"></i>](https://github.com/microsoft/accessibility-insights-web)
+          * Represented Microsoft as a member of the W3C Accessibility Guidelines Working Group advancing the industry-standard Web Content Accessibility Guidelines (WCAG)
+          * Built and maintained accessibility testing tools, services, libraries, and guidance spanning a wide variety of platforms (Web, Windows, Mac, Linux, Android) and developer ecosystems
+          * Helped ~100,000 users of our open-source tools, including most Microsoft development teams, to make their software more accessible to all
+          * Led technical collaboration between Accessibility Insights and internal/external partner teams
 
-# Experience Section
-# experience_title: Experience
+          ##### Windows Engineering System
+          * Saved ~10,000 engineer-hours/year by making it easier to onboard tests to Windows’ test labs
+          * Maintained and scaled out a legacy continuous integration system that reduced build and test times for typical Windows developers’ code changes from 20 hours to 1 hour
+          * Responsible for rapid full-stack development of many internal tools/services (mostly Azure/C#, some TypeScript/React) as part of an XP engineering team, working directly with stakeholders
 
-# Education Section
-# educaton_title: Education
-
-# More Section
-# more_title: A Little More About Me
-# more_content: | # this will include new lines to allow paragraphs
-#  ... content here
+          ##### Windows Networking
+          * Owned Windows Update’s underlying data transfer layer (BITS), serving over one billion end users
+          * Responsible for all of Windows’ APIs for performing background data transfer and SOAP operations
+          * Improved team efficiency by introducing several agile techniques, including retrospectives, pair programming, and test-driven design, to a heavily waterfall-focused Windows dev team
+          * Designed and built the end-to-end networking stress and reliability test strategy for Windows 8/8.1
+          * Responsible for the Windows Hardware Certification Kit test suite for NetworkDirect capabilities of ethernet devices, driving quality of the entire hardware ecosystem across many companies
+          * Designed and implemented a network protocol fuzz testing framework, and used it to identify several zero-day critical class security bugs in the Windows 8 TCP/IP stack
+          
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        title: <a href="https://github.com/dbjorge/airpush-detector">AirPush Detector</a>
+        description: |
+          AirPush Detector was an independently developed Android app that helped identify other apps using push notifications for advertisements. Over its lifetime, the app had 6 million user installs. Android built this functionality into the OS with Android 4.1, and I sunset the app in 2017.
 
 # Footer
 footer_show_references: false
 
 # Build settings
-remote_theme: sproogen/resume-theme
+remote_theme: sproogen/modern-resume-theme
 
 sass:
   sass_dir: _sass
@@ -52,3 +82,16 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
