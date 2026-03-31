@@ -103,7 +103,7 @@
         background-size:
           0% 2px,
           100% 1px;
-        transition: background-size 0.25s ease;
+        transition: none;
       }
 
       a:visited {
@@ -135,6 +135,12 @@
       .link-highlight-2,
       .link-highlight-2:visited {
         color: #4ade80;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        a {
+          transition: background-size 0.25s ease;
+        }
       }
 
       @media (max-width: 480px) {
