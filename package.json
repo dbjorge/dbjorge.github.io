@@ -1,0 +1,29 @@
+{
+  "name": "dbjorge.github.io",
+  "version": "1.0.0",
+  "description": "Controls the content of [dbjorge.net](https://www.dbjorge.net).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbjorge/dbjorge.github.io.git"
+  },
+  "author": "Dan Bjorge",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve public --listen 8080",
+    "test": "playwright test",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,html,css,json,md}": "prettier --write"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@playwright/test": "^1.58.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
+    "serve": "^14.2.6"
+  }
+}

@@ -1,144 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dan Bjorge</title>
-  <meta name="description" content="Dan Bjorge — VP of Product Architecture at Deque Systems, accessibility engineer, W3C contributor.">
-  <style>
-    @font-face {
-      font-family: "Figtree";
-      font-style: normal;
-      font-weight: 400 600;
-      font-display: swap;
-      src: url("assets/figtree-latin.woff2") format("woff2");
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Bjorge</title>
+    <meta
+      name="description"
+      content="Dan Bjorge — VP of Product Architecture at Deque Systems, accessibility engineer, W3C contributor."
+    />
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        font-style: normal;
+        font-weight: 400 600;
+        font-display: swap;
+        src: url("assets/figtree-latin.woff2") format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
 
-    body {
-      background-color: #1a1c2e;
-      color: #e4e4e7;
-      font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      margin: 0;
-      padding: 3rem 1.5rem;
-      padding-top: 3rem;
-    }
-
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .profile-photo {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin: 0;
-      line-height: 1.2;
-    }
-
-    p {
-      margin: 0 0 1.25rem;
-    }
-
-    p:first-of-type {
-      font-size: 1.25rem;
-      line-height: 1.75;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    a {
-      color: #c8d4e8;
-      text-decoration: none;
-      padding-bottom: 2px;
-      background-image:
-        linear-gradient(currentColor, currentColor),
-        linear-gradient(currentColor, currentColor);
-      background-repeat: no-repeat;
-      background-position: 0% 100%;
-      background-size: 0% 2px, 100% 1px;
-      transition: background-size 0.25s ease;
-    }
-
-    a:visited {
-      color: #c8d4e8;
-    }
-
-    a:hover {
-      background-size: 100% 2px, 100% 1px;
-    }
-
-    a:focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-
-    .socials a, .socials a:visited {
-      color: #7dd3fc;
-    }
-
-    .link-highlight-1, .link-highlight-1:visited {
-      color: #fbbf24;
-    }
-
-    .link-highlight-2, .link-highlight-2:visited {
-      color: #4ade80;
-    }
-
-    @media (max-width: 480px) {
       body {
-        padding: 2rem 1.25rem;
-        font-size: 1rem;
+        background-color: #1a1c2e;
+        color: #e4e4e7;
+        font-family:
+          "Figtree",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.7;
+        margin: 0;
+        padding: 3rem 1.5rem;
+        padding-top: 3rem;
+      }
+
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+      }
+
+      .profile-photo {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        object-fit: cover;
       }
 
       h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0 0 1.25rem;
       }
 
       p:first-of-type {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
+        line-height: 1.75;
       }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <header>
-      <img class="profile-photo" src="assets/profile.jpg" alt="Photograph of Dan Bjorge, a smiling white male in his 30s with short brown hair wearing glasses and a purple bow tie">
-      <h1>Dan Bjorge</h1>
-    </header>
 
-    <p>I'm VP of Product Architecture at <a class="link-highlight-1" href="https://deque.com">Deque Systems</a>, where we build tools to help make software more accessible to folks with disabilities. I lead engineering efforts and standards across the company's product division, and I co-maintain <a href="https://github.com/dequelabs/axe-core">axe-core</a>, an open source accessibility testing engine with billions of downloads. I also represent Deque in the <a href="https://www.w3.org/TR/WCAG22/">W3C WCAG 2</a> task force.</p>
+      p:last-child {
+        margin-bottom: 0;
+      }
 
-    <p>Before Deque, I spent over a decade at <a class="link-highlight-2" href="https://microsoft.com">Microsoft</a>. I most recently worked on <a href="https://accessibilityinsights.io">Accessibility Insights</a>, an open-source toolkit that's helped ~100,000 developers find and fix accessibility issues, where I represented Microsoft in the W3C Accessibility Guidelines working group. I've also worked on the Windows Engineering System and on the Windows networking stack, including as the owner of <a href="https://en.wikipedia.org/wiki/Background_Intelligent_Transfer_Service">BITS</a>, the data transfer engine underlying Windows Update and serving over a billion devices.</p>
+      a {
+        color: #c8d4e8;
+        text-decoration: none;
+        padding-bottom: 2px;
+        background-image:
+          linear-gradient(currentColor, currentColor),
+          linear-gradient(currentColor, currentColor);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        background-size:
+          0% 2px,
+          100% 1px;
+        transition: background-size 0.25s ease;
+      }
 
-    <p>Outside of work, projects I'm proudest of include leading nearly 100 contributors in the development of <a href="https://github.com/dbjorge/jorbs-spire-mod">a community Slay the Spire mod</a>, digitizing <a href="https://www.seattlehumane.org">Seattle Humane</a>'s paper-based recordkeeping for 100+ volunteers into a system integrated with the shelter's animal tracking software, and self-publishing <a href="https://github.com/dbjorge/AirPush-Detector">an Android app for detecting misuse of push notifications for ads</a> that reached 6 million users before it was sunset (Android eventually built it into the OS).</p>
+      a:visited {
+        color: #c8d4e8;
+      }
 
-    <p class="socials">You can find me on <a href="https://github.com/dbjorge">GitHub</a> and <a href="https://linkedin.com/in/dbjorge">LinkedIn</a>.</p>
-  </main>
-</body>
+      a:hover {
+        background-size:
+          100% 2px,
+          100% 1px;
+      }
+
+      a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+
+      .socials a,
+      .socials a:visited {
+        color: #7dd3fc;
+      }
+
+      .link-highlight-1,
+      .link-highlight-1:visited {
+        color: #fbbf24;
+      }
+
+      .link-highlight-2,
+      .link-highlight-2:visited {
+        color: #4ade80;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 2rem 1.25rem;
+          font-size: 1rem;
+        }
+
+        h1 {
+          font-size: 1.75rem;
+        }
+
+        p:first-of-type {
+          font-size: 1.125rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          class="profile-photo"
+          src="assets/profile.jpg"
+          alt="Photograph of Dan Bjorge, a smiling white male in his 30s with short brown hair wearing glasses and a purple bow tie"
+        />
+        <h1>Dan Bjorge</h1>
+      </header>
+
+      <p>
+        I'm VP of Product Architecture at
+        <a class="link-highlight-1" href="https://deque.com">Deque Systems</a>,
+        where we build tools to help make software more accessible to folks with
+        disabilities. I lead engineering efforts and standards across the
+        company's product division, and I co-maintain
+        <a href="https://github.com/dequelabs/axe-core">axe-core</a>, an open
+        source accessibility testing engine with billions of downloads. I also
+        represent Deque in the
+        <a href="https://www.w3.org/TR/WCAG22/">W3C WCAG 2</a> task force.
+      </p>
+
+      <p>
+        Before Deque, I spent over a decade at
+        <a class="link-highlight-2" href="https://microsoft.com">Microsoft</a>.
+        I most recently worked on
+        <a href="https://accessibilityinsights.io">Accessibility Insights</a>,
+        an open-source toolkit that's helped ~100,000 developers find and fix
+        accessibility issues, where I represented Microsoft in the W3C
+        Accessibility Guidelines working group. I've also worked on the Windows
+        Engineering System and on the Windows networking stack, including as the
+        owner of
+        <a
+          href="https://en.wikipedia.org/wiki/Background_Intelligent_Transfer_Service"
+          >BITS</a
+        >, the data transfer engine underlying Windows Update and serving over a
+        billion devices.
+      </p>
+
+      <p>
+        Outside of work, projects I'm proudest of include leading nearly 100
+        contributors in the development of
+        <a href="https://github.com/dbjorge/jorbs-spire-mod"
+          >a community Slay the Spire mod</a
+        >, digitizing
+        <a href="https://www.seattlehumane.org">Seattle Humane</a>'s paper-based
+        recordkeeping for 100+ volunteers into a system integrated with the
+        shelter's animal tracking software, and self-publishing
+        <a href="https://github.com/dbjorge/AirPush-Detector"
+          >an Android app for detecting misuse of push notifications for ads</a
+        >
+        that reached 6 million users before it was sunset (Android eventually
+        built it into the OS).
+      </p>
+
+      <p class="socials">
+        You can find me on <a href="https://github.com/dbjorge">GitHub</a> and
+        <a href="https://linkedin.com/in/dbjorge">LinkedIn</a>.
+      </p>
+    </main>
+  </body>
 </html>
